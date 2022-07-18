@@ -12,6 +12,9 @@ const app = express();
 const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.set('view engine' , 'ejs')
+app.set('views' , `${__dirname}/views`)
+
 
 // Cors for cross origin allowance
 const cors = require('cors');
@@ -36,7 +39,7 @@ const postAllData = (req , res) => {
     res.send(projectData);
 }
 app.get('/' , (req,res)=>{
-    res.render('index.html')
+    res.render('index')
 })
 // Get route
 app.get('/getData' , getAllData);
