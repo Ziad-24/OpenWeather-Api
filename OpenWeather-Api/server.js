@@ -35,7 +35,9 @@ const postAllData = (req , res) => {
     console.log('inside the server the projectdata is ' , projectData);
     res.send(projectData);
 }
-
+app.get('/' , (req,res)=>{
+    res.render('index.html')
+})
 // Get route
 app.get('/getData' , getAllData);
 
@@ -45,7 +47,7 @@ app.post('/sendData' , postAllData);
 // Setup Server
 
 const port = 3000;
-const localhost = 'http://127.0.0.1:5500';
+const localhost = 'http://127.0.0.1:3000';
 const runningServer = () => {
     {console.log(`this project is running on port: ${port} and the localserver is ${localhost}`);}
 }
