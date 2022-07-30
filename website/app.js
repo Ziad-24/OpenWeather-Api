@@ -76,7 +76,7 @@ const ShowUI = async() => {
         document.getElementById('date').innerHTML = `The date is <b>${data.date} </b>`;
         document.getElementById('temp').innerHTML = `The temprature in<b> ${data.name}</b> today is <b>${ Math.round(data.temp)} Degree</b>`;
         if(data.feeling)
-            document.getElementById('content').innerHTML = `The user is feeling : <br> <b>${data.feeling}</b>`;
+            document.getElementById('content').innerHTML = `The feeling of the user : <br> <b>${data.feeling}</b>`;
         
     } catch(errors){
         console.log('the error is inside ui');

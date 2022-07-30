@@ -49,7 +49,7 @@ app.post('/sendData' , postAllData);
 
 // Setup Server
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const localhost = 'http://127.0.0.1:3000';
 const runningServer = () => {
     {console.log(`this project is running on port: ${port} and the localserver is ${localhost}`);}

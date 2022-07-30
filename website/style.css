@@ -103,6 +103,12 @@ button{
     width: 100%;
     margin-top: 0;
 }
+button:hover{
+    /* color: #3b4acc; */
+    cursor: pointer;
+    background-color: #3b4acc;
+    color: white;
+}
 h1{
     font-size: 36px;
 }
